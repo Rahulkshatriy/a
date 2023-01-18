@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .top h1 {
+            background-color: #e5e5e5;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        div {
+            display: flex;
+            text-align: center;
+        }
+
+        .menu {
+            width: 20%;
+            text-align: center;
+        }
+
+        .menu,
+        a {
+            display: block;
+    margin-top: 10px;
+    width: 25%;
+    padding: 9px;
+    background-color: #e5e5e5;
+        }
+
+        .main {
+            display: block;
+            width: 60%;
+            padding-top: 50px;
+        }
+
+        .right {
+            display: block;
+            width: 25%;
+            margin-top: 10px;
+            text-align: center;
+            padding: 9px;
+    background-color: #e5e5e5;
+        }
+        .bottom{
+            background-color:#e5e5e5;
+            justify-content: center;
+            padding:10px;
+            margin-top:7px;
+        }
+        @media and(max-width:768px){
+         .menu, .main, .right{
+            width:100%; 
+         }  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <h1>Hello world</h1>
+    </div>
+    <div style="overflow:auto">
+        <div class="menu">
+            <a href="">link 1</a>
+            <a href="">link 2</a>
+            <a href="">link 3</a>
+            <a href="">link 4</a>
+        </div>
+        <div class="main">
+            <h2>
+                Lorem ipsum
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magnam ullam, deleniti quasi qui
+                dolore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore, consequatur, sapiente cum amet necessitatibus tempora consectetur, nam quo temporibus eius omnis aut veritatis accusamus ea qui dolorum expedita minus.</p>
+        </div>
+        <div class="right">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="bottom">
+        © copyright
+    </div>
+</body>
+
+</html>

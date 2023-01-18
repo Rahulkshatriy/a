@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="html-59-225995.webp" type="image/x-icon">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .cantainer {
+            border: 2px solid grey;
+            width: 1200px;
+            margin: 100px auto;
+            height: 600px;
+            background-color: #1c746c;
+            display: flex;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+
+        .login {
+            background-color: white;
+            width: 350px;
+            height: 400px;
+            border-radius: 13px;
+            /* margin-top: 85px; */
+            /* margin-left: 85px; */
+            margin: 115px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        .signup {
+            background-color: white;
+            width: 350px;
+            height: 450px;
+            border-radius: 13px;
+            margin-top: 65px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 35px;
+
+        }
+
+        input {
+            width: 283px;
+            font-size: 20px;
+            margin-left: 25px;
+            padding: 5px;
+            margin-top: 25px;
+            border-radius: 5px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #1c746c;
+            font-size: 15px;
+            padding-top: 14px;
+            padding-left: 25px;
+        }
+
+        button {
+            width: 302px;
+            height: 35px;
+            margin: auto;
+            display: block;
+            font-size: 25px;
+            background-color: #1c746c;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cantainer">
+
+        <div class="login">
+            <form action="/action_page.php" method="post">
+                <h1>Login</h1>
+                <input type="email" name="email" id="mail " placeholder="enter your email">
+                <input type="password" name="password" id="pass" placeholder="enter your password">
+                <a href="#">Forget password?</a>
+                <button type="button" value="login">Login</button>
+                <a href="#">Don't have acount? Signup</a>
+            </form>
+        </div>
+        <div class="signup">
+            <form action="/action_page.php" method="post">
+                <h1>Signup</h1>
+                <input type="email" name="mail" id="smail" placeholder="enter your email">
+                <input type="password" name="spass" id="spass" placeholder="create a password">
+                <input type="password" name="spass" id="spass" placeholder="comfirm your password">
+                <button type="button" value="signup">Signup</button>
+                <a href="#">Already have a acount? Login</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
